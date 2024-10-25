@@ -1,0 +1,1 @@
+SELECT FORMAT(GETDATE(), 'yyyy/MM/dd HH:mm:ss', 'fa')
