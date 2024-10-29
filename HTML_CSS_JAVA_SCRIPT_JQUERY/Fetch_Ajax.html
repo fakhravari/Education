@@ -94,7 +94,7 @@
       $("#ajaxGetButton").click(function () {
         $.ajax({
           url: "https://jsonplaceholder.typicode.com/posts/1",
-          method: "GET",
+          method: "post",
           success: function (data) {
             $("#output").val(
               "دریافت داده‌ها (jQuery Ajax):\n" + JSON.stringify(data, null, 2)
@@ -110,3 +110,9 @@
     </script>
   </body>
 </html>
+
+
+<!--
+https://ef2.noyankesht.ir/api/v1/Product/MultipleResults/MultipleResults
+-->
+
