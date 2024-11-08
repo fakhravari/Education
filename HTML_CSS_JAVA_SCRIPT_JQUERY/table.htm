@@ -1,0 +1,220 @@
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>برچسب‌های جدول</title>
+  </head>
+
+  <body>
+    ساخت یک جدول ساده
+    <br />
+
+    <table border="1">
+      <tr>
+        <td>ردیف ۱، سلول ۱</td>
+        <td>ردیف ۱، سلول ۲</td>
+      </tr>
+      <tr>
+        <td>ردیف ۲، سلول ۱</td>
+        <td>ردیف ۲، سلول ۲</td>
+      </tr>
+    </table>
+    <hr />
+
+    حاشیه برای جدول
+    <br />
+    <table border="1">
+      <tr>
+        <th>عنوان اول</th>
+        <th>عنوان دوم</th>
+      </tr>
+      <tr>
+        <td>ردیف ۱، سلول ۱</td>
+        <td>ردیف ۱، سلول ۲</td>
+      </tr>
+    </table>
+    <hr />
+
+    سلول‌های خالی
+    <br />
+    <table border="1">
+      <tr>
+        <td>ردیف ۲، سلول ۱</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <hr />
+    جدول با عنوان
+    <br />
+    <table border="1">
+      <caption>
+        عنوان جدول
+      </caption>
+      <tr>
+        <th>سرتیتر ۱</th>
+        <th>سرتیتر ۲</th>
+      </tr>
+      <tr>
+        <td>داده ۱</td>
+        <td>داده ۲</td>
+      </tr>
+    </table>
+    <hr />
+    توسعه سلول به چند ستون یا ردیف
+    <br />
+    <table border="1">
+      <tr>
+        <td colspan="2">سلولی که دو ستون را می‌پوشاند</td>
+      </tr>
+      <tr>
+        <td rowspan="2">سلولی که دو ردیف را می‌پوشاند</td>
+        <td>سلول ۲</td>
+      </tr>
+      <tr>
+        <td>سلول ۳</td>
+      </tr>
+    </table>
+    <hr />
+    پس‌زمینه جدول و سلول
+    <br />
+    <table border="1">
+      <tr>
+        <td style="background-color: #ffddc1">سلول ۱</td>
+        <td style="background-color: #c1ffd7">سلول ۲</td>
+      </tr>
+      <tr>
+        <td style="background-color: #c1ddff">سلول ۳</td>
+        <td style="background-color: #fff2c1">سلول ۴</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    جدول تودرتو
+    <br />
+    <table border="1">
+      <tr>
+        <td>سلول ۱</td>
+        <td>
+          <table border="1">
+            <tr>
+              <td>جدول درونی - سلول ۱</td>
+            </tr>
+            <tr>
+              <td>جدول درونی - سلول ۲</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>سلول ۲</td>
+        <td>سلول ۳</td>
+      </tr>
+    </table>
+    <hr />
+
+    جدول با سرتیترهای چندگانه
+    <br />
+    <table border="1">
+      <tr>
+        <th colspan="2">اطلاعات شخصی</th>
+      </tr>
+      <tr>
+        <th>نام</th>
+        <th>سن</th>
+      </tr>
+      <tr>
+        <td>علی</td>
+        <td>۲۵</td>
+      </tr>
+      <tr>
+        <td>رضا</td>
+        <td>۳۰</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    جدول با فاصله داخلی سلول
+    <br />
+    <table border="1" style="border-collapse: collapse">
+      <tr>
+        <td style="padding: 10px">سلول ۱</td>
+        <td style="padding: 10px">سلول ۲</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px">سلول ۳</td>
+        <td style="padding: 10px">سلول ۴</td>
+      </tr>
+    </table>
+    <hr />
+
+    جدول با نمایش چپ‌چین و راست‌چین
+    <br />
+    <table border="1" style="width: 100%">
+      <tr>
+        <td align="left">چپ‌چین</td>
+        <td align="right">راست‌چین</td>
+      </tr>
+      <tr>
+        <td align="center">وسط‌چین</td>
+        <td align="justify">متن منظم‌شده</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h3>برچسب‌های جدول و توضیحات آن‌ها</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>برچسب</th>
+          <th>توضیحات</th>
+        </tr>
+      </thead>
+      <tr>
+        <td><code>&lt;table&gt;</code></td>
+        <td>یک جدول را تعریف می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;th&gt;</code></td>
+        <td>سرتیتر یک ستون را معرفی می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;tr&gt;</code></td>
+        <td>یک ردیف در جدول را معرفی می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;td&gt;</code></td>
+        <td>یک سلول داده در جدول را معرفی می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;caption&gt;</code></td>
+        <td>عنوان جدول را تعریف می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;colgroup&gt;</code></td>
+        <td>گروهی از ستون‌ها را معرفی می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;col&gt;</code></td>
+        <td>ویژگی برای یک یا چند ستون را مشخص می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;thead&gt;</code></td>
+        <td>سر یک جدول را معرفی می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;tbody&gt;</code></td>
+        <td>بدنه یک جدول را معرفی می‌کند</td>
+      </tr>
+      <tr>
+        <td><code>&lt;tfoot&gt;</code></td>
+        <td>پاورقی جدول را معرفی می‌کند</td>
+      </tr>
+    </table>
+    <p>
+      این موارد برای طراحی جداول مختلف با امکانات کامل به شما کمک می‌کند تا
+      داده‌ها را به صورت منظم و زیبا نمایش دهید.
+    </p>
+  </body>
+</html>
