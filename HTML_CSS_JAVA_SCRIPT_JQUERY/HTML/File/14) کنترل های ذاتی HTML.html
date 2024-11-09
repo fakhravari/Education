@@ -1,0 +1,806 @@
+﻿<html dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="fa">
+    <title>کنترل های ذاتی HTML</title>
+    <style type="text/css">
+        .style1
+        {
+            font-family: "B Titr";
+        }
+        #Slider1
+        {
+            height: 121px;
+            width: 288px;
+        }
+        .style2
+        {
+            font-family: "B Zar";
+            font-size: 14pt;
+        }
+        .style3
+        {
+            font-family: "B Titr";
+            font-size: 14pt;
+            color: blue;
+        }
+        .style5
+        {
+            font-family: "B Zar";
+            font-size: 11.1111116409302px;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            direction: rtl;
+            text-align: right;
+            line-height: 25px;
+            font-style: normal;
+            font-variant: normal;
+            letter-spacing: normal;
+            text-indent: 0px;
+            text-transform: none;
+            white-space: normal;
+            word-spacing: 0px;
+            background-color: rgb(245, 245, 220);
+        }
+        .style6
+        {
+            font-size: 14pt;
+        }
+        .style7
+        {
+            font-family: "B Titr";
+            font-size: 12pt;
+        }
+        .style8
+        {
+            text-align: center;
+        }
+        .style9
+        {
+            font-family: "B Titr";
+            font-size: 14pt;
+            color: rgb(255, 0, 0);
+        }
+        .style10
+        {
+            font-family: "B Zar";
+            font-size: 14pt;
+            line-height: 200%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .style11
+        {
+            font-size: 13pt;
+        }
+        .style12
+        {
+            font-family: "B Zar";
+            font-size: 12pt;
+        }
+        .style13
+        {
+            width: 1188.88891601563px;
+            height: 12px;
+            font-family: "B Titr";
+            font-size: 12pt;
+            color: rgb(0, 0, 0);
+        }
+        .style14
+        {
+            color: rgb(0, 0, 0);
+        }
+        .style15
+        {
+            font-family: "B Titr";
+            font-size: 12pt;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .style16
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+        .style17
+        {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: #F5F5DC">
+    <h2 class="style1" style="color: maroon; text-align: center; direction: rtl; font-weight: normal;
+        line-height: 40px; font-style: normal; font-variant: normal; letter-spacing: normal;
+        orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto;
+        word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        رويدادهای <strong>HTML</strong></h2>
+    <p class="titr2" 
+        style="font-size: 12pt; font-style: normal; font-variant: normal;
+        letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        font-family: Mitra, Arial; color: rgb(0, 100, 0); font-weight: bold; border: 1px solid black;
+        height: 25px; padding: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: gray 8px 8px 8px 5px;
+        line-height: 25px; text-align: center; background-color: rgb(127, 255, 212); width: 168px;">
+        <a id="fd0" 
+            style="text-decoration: none; font-family: 'B Titr'; font-size: 14pt; color: #FF0000;">کتنرل &lt; fieldset &gt; </a></p>
+    <p class="style2" style="font-weight: 500;
+        color: rgb(0, 0, 0); direction: rtl; text-align: right; line-height: 25px; font-style: normal;
+        font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(245, 245, 220);">
+        اين کنترل توسط تگ &lt; fieldset &gt; ايجاد شده و به دور محتويات درونی خود يک کادر
+        ايجاد می کند . </p>
+    <p class="style2" style="font-weight: 500;
+        color: rgb(0, 0, 0); direction: rtl; text-align: right; line-height: 25px; font-style: normal;
+        font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(245, 245, 220);">
+        تگ ها و عناصری که بين تگ باز و بسته &lt; fieldset &gt; قرار بگيرند
+        ، عناصر درونی آن را تشکيل می دهند . از اين کنترل برای دسته بندی عناصر و گروه های
+        مختلف استفاده می شود .</p>
+    <p class="style3" style="font-family: Mitra; font-weight: bold; direction: rtl; text-align: right; height: 25px; padding: 5px; font-style: normal;
+        font-variant: normal; letter-spacing: normal; line-height: 25px; orphans: auto;
+        text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;
+        -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        &nbsp;تگ &lt; legend &gt; </p>
+    <p class="style2" style="font-weight: 500;
+        color: rgb(0, 0, 0); direction: rtl; text-align: right; line-height: 25px; font-style: normal;
+        font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(245, 245, 220);">
+        از اين تگ برای ايجاد عنوان برای کادر fieldset استفاده می شود . متنی که بين تگ باز
+        و بسته &lt; legend &gt; قرار بگيرد ، تعيين کننده عنوان کادر است . در مثال زير نحوه
+        استفاده از اين تگ نشان داده شده است</p>
+    <p class="style5" style="orphans: auto; widows: auto; -webkit-text-stroke-width: 0px;
+        ">
+        <b style="color: red;"><span class="style6">مثال :</span><span class="Apple-converted-space"><span 
+            class="style6">&nbsp;</span></span></b><span class="style6">در
+        مثال زير 2 کادر متن را در درون يک fieldset قرار داده ايم :</span></p>
+    <table cellpadding="5" cellspacing="0" class="ex" style="border: 1px solid blue;
+        direction: ltr; text-align: left; width: 815px; color: rgb(0, 0, 0);
+        font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal;
+        font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(255, 250, 250);" align="center">
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                Example
+            </td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt; fieldset &gt;<br />
+                    <span class="g" style="color: green;">&nbsp;&nbsp;&lt; legend &gt; Select the size of
+                        your item &lt; /legend &gt;</span><br />
+                    <span class="r" style="color: red;">&nbsp;&nbsp;Hieght : &lt; input type=&quot;text&quot;
+                        size=&quot;3&quot; / &gt;</span><br />
+                    <span class="b" style="color: blue;">&nbsp;&nbsp;Width : &lt; input type=&quot;text&quot;
+                        size=&quot;3&quot; / &gt;</span><br />
+                    &lt; /fieldset &gt;</span>
+            </td>
+            <td class="style7" style="text-align: center; border: 1px solid blue;
+                width: 84.444450378418px;">
+                کد
+            </td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <fieldset>
+                    <legend style="color: green;">Select the size of your item</legend><span class="r"
+                        style="color: red;">Hieght :</span><span class="Apple-converted-space">&nbsp;</span><input
+                            size="3" type="text" /><span class="Apple-converted-space">&nbsp;</span><span class="b"
+                                style="color: blue;">Width :</span><span class="Apple-converted-space">&nbsp;</span><input
+                                    size="3" type="text" /></fieldset>
+            </td>
+            <td class="style7" style="text-align: center; border: 1px solid blue;
+                width: 84.444450378418px;">
+                خروجی
+            </td>
+        </tr>
+    </table>
+    <br style="color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11.1111116409302px;
+        font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal;
+        line-height: 25px; orphans: auto; text-align: right; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(245, 245, 220);" />
+    <p class="titr2" 
+        style="font-size: 12pt; font-style: normal; font-variant: normal;
+        letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        font-family: Mitra, Arial; color: rgb(0, 100, 0); font-weight: bold; border: 1px solid black;
+        height: 25px; padding: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: gray 8px 8px 8px 5px;
+        line-height: 25px; text-align: center; background-color: rgb(127, 255, 212); width: 168px;">
+        <a id="lb0" 
+            style="text-decoration: none; font-family: 'B Titr'; font-size: 14pt; color: #FF0000;">کنترل &lt; label &gt; </a></p>
+    <p class="matn" 
+        style="font-family: 'B Zar'; font-size: 14pt; font-weight: 500;
+        color: rgb(0, 0, 0); direction: rtl; text-align: right; line-height: 200%; font-style: normal;
+        font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(245, 245, 220); margin-top: 0px; margin-bottom: 0px;">
+        اين تگ برای ايجاد يک عنوان برای يک کنترل ديگر HTML استفاده می شود . برای ايجاد ارتباط
+        بين تگ &lt; label &gt; و کنترل مورد نظر ، خاصيت for تگ label را برابر id کنترل مورد
+        نظر قرار می دهيم .<br />
+        برای مثال ، اگر يک دکمه راديويي با id = Male داشته باشيم و بخواهيم يک label برای
+        آن طراحی کنيم ، برای ايجاد ارتباط بين label و دکمه راديويي ، خاصيت for تگ label
+        را برابر id دکمه راديويي يعنی Male قرار می دهيم . در اين صورت کليک کردن بر روی نوشته
+        label همانند کليک کردن بر روی خود کنترل مورد نظر است .</p>
+    <p class="matn" 
+        style="font-family: 'B Zar'; font-size: 14pt; font-weight: 500;
+        color: rgb(0, 0, 0); direction: rtl; text-align: right; line-height: 200%; font-style: normal;
+        font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(245, 245, 220); margin-top: 0px; margin-bottom: 0px;">
+        &nbsp;</p>
+    <table cellpadding="5" cellspacing="0" class="pr" style="border: 1px solid blue;
+        direction: rtl; text-align: right; width: 1001px; color: rgb(0, 0, 0);
+        font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal;
+        font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(255, 250, 250);" align="center">
+        <tr>
+            <td class="style7" colspan="3" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                خواص مهم تگ label
+            </td>
+        </tr>
+        <tr class="style7">
+            <td class="prname" style="text-align: center; border: 1px solid blue;
+                width: 132.222229003906px;">
+                نام خاصيت
+            </td>
+            <td class="prname" style="text-align: center; border: 1px solid blue;
+                width: 132.222229003906px;">
+                نوع خاصيت
+            </td>
+            <td class="prdes" style="text-align: center; border: 1px solid blue;
+                width: 900px;">
+                شرح
+            </td>
+        </tr>
+        <tr class="style2">
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                for
+            </td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                id يک کنترل ديگر
+            </td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                تعيين کننده id کنترلی است که label به آن تعلق دارد .
+            </td>
+        </tr>
+    </table>
+    <p class="style5" style="orphans: auto; widows: auto; -webkit-text-stroke-width: 0px;
+        ">
+        <b style="color: red;"><span class="style6">مثال :</span><span class="Apple-converted-space"><span 
+            class="style6">&nbsp;</span></span></b><span class="style6">در
+        مثال زير برای 2 دکمه راديويي زير ، 2 label جدا طراحی کرده ايم :</span></p>
+    <table cellpadding="5" cellspacing="0" class="ex" style="border: 1px solid blue;
+        direction: ltr; text-align: left; width: 874px; color: rgb(0, 0, 0);
+        font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal;
+        font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        background-color: rgb(255, 250, 250);" align="center">
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                Example
+            </td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt; fieldset style=&quot;width: 200px&quot; &gt;<br />
+                    <span class="g" style="color: green;">&nbsp;&nbsp;&lt; legend &gt; Select Male or Female
+                        &lt; /legend &gt;</span><br />
+                    <span class="r" style="color: red;">&nbsp;&nbsp;&lt; input type=&quot;radio&quot; id=&quot;Male&quot;
+                        name =&quot;Male&quot; value=&quot;Male&quot; / &gt;<br />
+                        &nbsp;&nbsp;&lt; label for=&quot;Male&quot; &gt; Male &lt; /label &gt;</span><br />
+                    <span class="b" style="color: blue;">&nbsp;&nbsp;&lt; input type=&quot;radio&quot; id=&quot;Female&quot;
+                        name =&quot;Male&quot; value=&quot;Female&quot; / &gt;<br />
+                        &nbsp;&nbsp;&lt; label for=&quot;Female&quot; &gt; Female &lt; /label &gt;</span><br />
+                    &lt; /fieldset &gt;</span>
+            </td>
+            <td class="style7" style="text-align: center; border: 1px solid blue;
+                width: 84.444450378418px;">
+                کد
+            </td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <fieldset style="width: 200px;">
+                    <legend>Select Male or Female</legend>
+                    <input id="Male" checked="true" name="Male1" type="radio" value="V1" /><span class="Apple-converted-space">&nbsp;</span><label
+                        for="Male">Male</label><span class="Apple-converted-space">&nbsp;</span><input id="Female"
+                            checked="true" name="Male" type="radio" value="V1" /><span class="Apple-converted-space">&nbsp;</span><label
+                                for="Female">Female</label></fieldset>
+            </td>
+            <td class="style7" style="text-align: center; border: 1px solid blue;
+                width: 84.444450378418px;">
+                خروجی
+            </td>
+        </tr>
+    </table>
+    <br class="Apple-interchange-newline" />
+    <p class="style9" 
+        style="font-style: normal; font-variant: normal;
+        letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        border: 1px solid black;
+        height: 25px; padding: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: gray 8px 8px 8px 5px;
+        line-height: 25px; text-align: center; background-color: rgb(127, 255, 212); width: 168px;">
+        کنترل &lt; select &gt;</p>
+    <p class="matn" 
+        style="font-family: Tahoma; font-size: 11.1111116409302px; font-weight: 500; color: rgb(0, 0, 0); direction: rtl; text-align: right; line-height: 25px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        از کنترل select برای ايجاد يک ليست باز شو استفاده می شود . اين ليست می تواند 
+        دارای گزينه های مختلفی باشد که هر کدام توسط يک تگ &lt; option &gt; تعيين می شود :</p>
+    <table cellpadding="5" cellspacing="0" class="pr" 
+        
+        style="border: 1px solid blue; direction: rtl; text-align: right; width: 1201.11108398438px; color: rgb(0, 0, 0); font-family: 'B Zar'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 250, 250);">
+        <tr>
+            <td class="style13" colspan="3" 
+                style="border: 1px solid blue; ">
+                <p style="line-height: 150%; text-align: center; word-spacing: 0px">
+                خواص مهم تگ select</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="style15" 
+                style="border: 1px solid blue; width: 132.222229003906px;">
+                <p style="line-height: 150%; text-align: center; word-spacing: 0px">
+                نام خاصيت</p>
+            </td>
+            <td class="style16" 
+                
+                style="color: rgb(139, 69, 19); border: 1px solid blue; width: 132.222229003906px;">
+                <p class="style14" 
+                    style="line-height: 150%; text-align: center; word-spacing: 0px">
+                نوع خاصيت</p>
+            </td>
+            <td class="prdes" 
+                style="color: rgb(139, 69, 19); border: 1px solid blue; width: 900px;">
+                <p class="style17" 
+                    style="line-height: 150%; text-align: center; word-spacing: 0px">
+                شرح</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                disabled</p>
+            </td>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                disabled</p>
+            </td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                در صورتی که مقدار اين خاصيت برابر disabled تنظيم شود ، ليست غير فعال خواهد بود .</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                multiple</p>
+            </td>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                multiple</p>
+            </td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                در صورتی که مقدار اين خاصيت برابر multiple تنظيم شود ، می توان در هر لحظه بيش از 
+                يک مورد را از ليست انتخاب کرد . در حالت پيش فرض ، در هر لحظه حداکثر می توان يک 
+                مورد را از ليست انتخاب کرد .</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                name</p>
+            </td>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                نام</p>
+            </td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                تعيين کننده يک نام منحصر به فرد برای ليست باز شو است .</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                size</p>
+            </td>
+            <td class="style8" 
+                style="border: 1px solid blue; direction: rtl;">
+                <p class="style8" style="line-height: 150%; word-spacing: 0px">
+                عدد<br />
+                number</p>
+            </td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                <p style="line-height: 150%; text-align: justify; word-spacing: 0px">
+                توسط اين خاصيت می توان تعداد آيتم های قابل مشاهده در ليست را در حال عادی ( بسته 
+                بودن ليست ) تعيين کرد . به طور پيش فرض فقط يک آيتم از ليست قابل مشاهده است .</p>
+            </td>
+        </tr>
+    </table>
+    <p class="titr" 
+        style="font-family: Mitra; font-size: 12pt; font-weight: bold; color: blue; direction: rtl; text-align: right; height: 25px; padding: 5px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        <a id="opt" 
+            style="text-decoration: none; font-family: 'B Titr'; font-size: 14pt;">&nbsp;تگ &lt; option &gt; </a></p>
+    <p class="style10" 
+        style="font-weight: 500; color: rgb(0, 0, 0); direction: rtl; text-align: right; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        از اين تگ برای تعيين يک مورد در داخل يک ليست استفاده می شود . متنی که بين تگ باز 
+        و بسته &lt; option &gt; قرار بگيرد ، تعيين کننده نام گزينه در ليست است .<span 
+            class="Apple-converted-space">&nbsp;</span><br />
+        <b style="color: red;"><span class="style1">تکته</span> :<span 
+            class="Apple-converted-space">&nbsp;</span></b>اين تگ بايستی در درون تگ &lt; select 
+        &gt; به کار رود در غير اين صورت معنا و کاربردی ندارد .</p>
+    <p class="style10" 
+        style="font-weight: 500; color: rgb(0, 0, 0); direction: rtl; text-align: right; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        &nbsp;</p>
+    <table align="center" cellpadding="5" cellspacing="0" class="pr" 
+        style="border: 1px solid blue; direction: rtl; text-align: right; width: 1201.11108398438px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 250, 250);">
+        <tr>
+            <td class="style7" colspan="3" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                خواص مهم تگ option</td>
+        </tr>
+        <tr class="style7">
+            <td class="prname" 
+                style="text-align: center; border: 1px solid blue; width: 132.222229003906px;">
+                نام خاصيت</td>
+            <td class="prname" 
+                style="text-align: center; border: 1px solid blue; width: 132.222229003906px;">
+                نوع خاصيت</td>
+            <td class="prdes" 
+                style="text-align: center; border: 1px solid blue; width: 900px;">
+                شرح</td>
+        </tr>
+        <tr class="style12">
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                disabled</td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                disabled</td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                در صورتی که مقدار اين خاصيت برابر disabled تنظيم شود ، آن گزينه ليست غير فعال 
+                خواهد بود .</td>
+        </tr>
+        <tr class="style12">
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                selected</td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                selected</td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                در صورتی که مقدار اين خاصيت برای گزينه ای در ليست برابر selected تنظيم شود ، آن 
+                گزينه به صورت پيش فرض در ليست انتخاب شده است و اول نمايش داده می شود . در هر 
+                ليستي در هر لحظه حداکثر يک گزينه می تواند selected باشد .</td>
+        </tr>
+        <tr class="style12">
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                value</td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                مقدار</td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                مقدار و ارزش گزينه را تعيين می کند ، که در هنگام ارسال اطلاعات فرم به سرور 
+                استفاده می شود .</td>
+        </tr>
+    </table>
+    <p class="style5" 
+        style="orphans: auto; widows: auto; -webkit-text-stroke-width: 0px;">
+        <b style="color: red;"><span class="style11">مثال :</span><span 
+            class="Apple-converted-space"><span class="style11">&nbsp;</span></span></b><span 
+            class="style11">در مثال زير يک ليست بازشو با چندين مقدار ايجاد شده است . 
+        همچنين در موارد بعدی انواع خصوصيات تگ select را به صورت عملی بررسی کرده ايم . 
+        برای مشاهده گزينه های ديگر ليست ، بر روی آن کليک کنيد :</span></p>
+    <table align="center" cellpadding="5" cellspacing="0" class="ex" 
+        
+        style="border: 1px solid blue; direction: ltr; text-align: left; width: 927px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 250, 250);">
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                Example</td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt;select&gt;<br />
+                <span class="g" style="color: green;">&nbsp;&nbsp;&lt; option value=&quot;VB&quot; &gt; Visual Basic &lt; 
+                /option &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                <span class="b" style="color: blue;">&nbsp;&nbsp;&lt; option value=&quot;C#&quot; &gt; Visual C# &lt; /option 
+                &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                &nbsp;&nbsp;&lt; option value=&quot;Asp&quot; selected=&quot;selected&quot; &gt; ASP.NET &lt; /option &gt;<br />
+                <span class="r" style="color: red;">&nbsp;&nbsp;&lt; option value=&quot;Sql&quot; &gt; SQL Server &lt; 
+                /option &gt;</span><br />
+                &lt; /select &gt;</span></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                کد</td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <select name="D1">
+                    <span class="Apple-converted-space"></span>
+                    <option value="VB">Visual Basic</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="C#">Visual C#</option>
+                    <span class="Apple-converted-space"></span>
+                    <option selected="selected" value="Asp">ASP.NET</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="Sql">SQL Server</option>
+                    <span class="Apple-converted-space"></span>
+                </select></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                خروجی</td>
+        </tr>
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px; direction: rtl;">
+                در حالت زير ليست غير فعال است .</td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt; select<span class="Apple-converted-space">&nbsp;</span><u>disabled 
+                =&quot;disabled&quot;</u>&gt;<br />
+                <span class="g" style="color: green;">&nbsp;&nbsp;&lt; option value=&quot;VB&quot; &gt; Visual Basic &lt; 
+                /option &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                <span class="b" style="color: blue;">&nbsp;&nbsp;&lt; option value=&quot;C#&quot; &gt; Visual C# &lt; /option 
+                &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                &nbsp;&nbsp;&lt; option value=&quot;Asp&quot; selected=&quot;selected&quot; &gt; ASP.NET &lt; /option &gt;<br />
+                <span class="r" style="color: red;">&nbsp;&nbsp;&lt; option value=&quot;Sql&quot; &gt; SQL Server &lt; 
+                /option &gt;</span><br />
+                &lt; /select &gt;</span></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                کد</td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <select disabled="disabled" name="D2">
+                    <span class="Apple-converted-space"></span>
+                    <option value="VB">Visual Basic</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="C#">Visual C#</option>
+                    <span class="Apple-converted-space"></span>
+                    <option selected="selected" value="Asp">ASP.NET</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="Sql">SQL Server</option>
+                    <span class="Apple-converted-space"></span>
+                </select></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                خروجی</td>
+        </tr>
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px; direction: rtl;">
+                در حالت زير می توان از ليست بيش از يک گزينه انتخاب کرد .</td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt; select<span class="Apple-converted-space">&nbsp;</span><u>multiple 
+                =&quot;multiple&quot;</u>&gt;<br />
+                <span class="g" style="color: green;">&nbsp;&nbsp;&lt; option value=&quot;VB&quot; &gt; Visual Basic &lt; 
+                /option &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                <span class="b" style="color: blue;">&nbsp;&nbsp;&lt; option value=&quot;C#&quot; &gt; Visual C# &lt; /option 
+                &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                &nbsp;&nbsp;&lt; option value=&quot;Asp&quot; selected=&quot;selected&quot; &gt; ASP.NET &lt; /option &gt;<br />
+                <span class="r" style="color: red;">&nbsp;&nbsp;&lt; option value=&quot;Sql&quot; &gt; SQL Server &lt; 
+                /option &gt;</span><br />
+                &lt; /select &gt;</span></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                کد</td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <select multiple="multiple" name="D3">
+                    <span class="Apple-converted-space"></span>
+                    <option value="VB">Visual Basic</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="C#">Visual C#</option>
+                    <span class="Apple-converted-space"></span>
+                    <option selected="selected" value="Asp">ASP.NET</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="Sql">SQL Server</option>
+                    <span class="Apple-converted-space"></span>
+                </select></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                خروجی</td>
+        </tr>
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px; direction: rtl;">
+                در حالت زير بيش از يک گزينه از ليست در حالت عادی نمايش داده می شود .</td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt; select<span class="Apple-converted-space">&nbsp;</span><u>size 
+                =&quot;3&quot;</u>&gt;<br />
+                <span class="g" style="color: green;">&nbsp;&nbsp;&lt; option value=&quot;VB&quot; &gt; Visual Basic &lt; 
+                /option &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                <span class="b" style="color: blue;">&nbsp;&nbsp;&lt; option value=&quot;C#&quot; &gt; Visual C# &lt; /option 
+                &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                &nbsp;&nbsp;&lt; option value=&quot;Asp&quot; selected=&quot;selected&quot; &gt; ASP.NET &lt; /option &gt;<br />
+                <span class="r" style="color: red;">&nbsp;&nbsp;&lt; option value=&quot;Sql&quot; &gt; SQL Server &lt; 
+                /option &gt;</span><br />
+                &lt; /select &gt;</span></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                کد</td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <select name="D4" size="3">
+                    <span class="Apple-converted-space"></span>
+                    <option value="VB">Visual Basic</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="C#">Visual C#</option>
+                    <span class="Apple-converted-space"></span>
+                    <option selected="selected" value="Asp">ASP.NET</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="Sql">SQL Server</option>
+                    <span class="Apple-converted-space"></span>
+                </select></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                خروجی</td>
+        </tr>
+    </table>
+    <p class="titr" 
+        style="font-family: Mitra; font-size: 12pt; font-weight: bold; color: blue; direction: rtl; text-align: right; height: 25px; padding: 5px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        <a id="optg" 
+            style="text-decoration: none; font-family: 'B Titr'; font-size: 14pt;">تگ &lt; optgroup &gt; </a></p>
+    <p class="style10" 
+        style="font-weight: 500; color: rgb(0, 0, 0); direction: rtl; text-align: right; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        از اين تگ برای دسته بندی گزينه های يک ليست در گروه های جدا از هم استفاده می شود 
+        . در هنگام زياد بودن موارد ليست ، از اين تگ می توان برای دسته بندی موارد مشابه 
+        در گروه های جدا ، جهت سهولت در انتخاب استفاده شود . عنوانی که برای گروه توسط 
+        خاصيت label اين تگ تعيين می شود ، به صورت سر گروه و بزرگتر از موارد ديگر ، در 
+        ليست نمايش داده می شود ولی عملا قابل انتخاب نيست .<br />
+        <b style="color: red;"><span class="style1">نکته</span> :<span 
+            class="Apple-converted-space">&nbsp;</span></b>اين تگ بايد در درون تگ select به 
+        کار رود .</p>
+    <p class="style10" 
+        style="font-weight: 500; color: rgb(0, 0, 0); direction: rtl; text-align: right; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 220);">
+        &nbsp;</p>
+    <table align="center" cellpadding="5" cellspacing="0" class="pr" 
+        
+        style="border: 1px solid blue; direction: rtl; text-align: right; width: 1003px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 250, 250);">
+        <tr>
+            <td class="style7" colspan="3" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                خواص مهم تگ optgroup</td>
+        </tr>
+        <tr class="style7">
+            <td class="prname" 
+                style="text-align: center; border: 1px solid blue; width: 132.222229003906px;">
+                نام خاصيت</td>
+            <td class="prname" 
+                style="text-align: center; border: 1px solid blue; width: 132.222229003906px;">
+                نوع خاصيت</td>
+            <td class="prdes" 
+                style="text-align: center; border: 1px solid blue; width: 900px;">
+                شرح</td>
+        </tr>
+        <tr class="style2">
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                disabled</td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                disabled</td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                در صورتی که مقدار اين خاصيت برابر disabled تنظيم شود ، آن دسته گزينه ليست غير 
+                فعال خواهد بود .</td>
+        </tr>
+        <tr class="style2">
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                label</td>
+            <td class="style8" style="border: 1px solid blue; direction: rtl;">
+                متن<br />
+                text</td>
+            <td class="prbody" 
+                style="border: 1px solid blue; text-align: right; direction: rtl;">
+                عنوان گروه را در ليست تعيين می کند .</td>
+        </tr>
+    </table>
+    <p class="style5" 
+        style="orphans: auto; widows: auto; -webkit-text-stroke-width: 0px;">
+        <b style="color: red;"><span class="style6">مثال :</span><span 
+            class="Apple-converted-space"><span class="style6">&nbsp;</span></span></b><span 
+            class="style6">در ليست زير 2 گروه از زبان های برنامه نويسی وب معرفی شده اند 
+        :</span></p>
+    <table align="center" cellpadding="5" cellspacing="0" class="ex" 
+        
+        style="border: 1px solid blue; direction: ltr; text-align: left; width: 1058px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11.1111116409302px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 25px; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 250, 250);">
+        <tr>
+            <td class="style7" colspan="2" 
+                style="text-align: center; border: 1px solid blue; width: 1188.88891601563px;">
+                Example</td>
+        </tr>
+        <tr>
+            <td class="body" 
+                style="border: 1px solid blue; text-align: left; font-family: 'B Zar'; font-size: 12pt;">
+                <span style="color: maroon;">&lt; select &gt;<br />
+                <span style="color: teal;">&nbsp;&nbsp;&lt; optgroup label=&quot;Server Side Languages&quot; &gt;</span><br />
+                <span class="g" style="color: green;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;VB&quot; &gt; Visual Basic &lt; 
+                /option &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                <span class="b" style="color: blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;C#&quot; &gt; Visual C# &lt; 
+                /option &gt;</span><span class="Apple-converted-space">&nbsp;</span><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;Asp&quot; selected=&quot;selected&quot; &gt; ASP.NET &lt; /option &gt;<br />
+                <span class="r" style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;Sql&quot; &gt; SQL Server &lt; 
+                /option &gt;</span><br />
+                <span style="color: teal;">&nbsp;&nbsp;&lt; /optgroup &gt;</span><br />
+                <span style="color: teal;">&nbsp;&nbsp;&lt; optgroup label=&quot;Client Side Languages&quot; &gt;</span><br />
+                <span class="g" style="color: green;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;vbscript&quot; &gt; VB Script 
+                &lt; /option &gt;</span><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;javascript&quot; selected=&quot;selected&quot; &gt; Java Script &lt; /option &gt;<br />
+                <span class="r" style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; option value=&quot;html&quot; &gt; HTML &lt; /option 
+                &gt;</span><br />
+                <span style="color: teal;">&nbsp;&nbsp;&lt; /optgroup &gt;</span><br />
+                &lt; /select &gt;</span></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                کد</td>
+        </tr>
+        <tr>
+            <td class="body" style="border: 1px solid blue; text-align: left;">
+                <select name="D5">
+                    <span class="Apple-converted-space"></span>
+                    <optgroup label="Server Side Languages">
+                    <span class="Apple-converted-space"></span>
+                    <option value="VB">Visual Basic</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="C#">Visual C#</option>
+                    <span class="Apple-converted-space"></span>
+                    <option selected="selected" value="Asp">ASP.NET</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="Sql">SQL Server</option>
+                    <span class="Apple-converted-space"></span>
+                    </optgroup>
+                    <span class="Apple-converted-space"></span>
+                    <optgroup label="Client Side Languages">
+                    <span class="Apple-converted-space"></span>
+                    <option value="vbscript">VB Script</option>
+                    <span class="Apple-converted-space"></span>
+                    <option selected="selected" value="javascript">Java Script</option>
+                    <span class="Apple-converted-space"></span>
+                    <option value="html">HTML</option>
+                    <span class="Apple-converted-space"></span>
+                    </optgroup>
+                    <span class="Apple-converted-space"></span>
+                </select></td>
+            <td class="style7" 
+                style="text-align: center; border: 1px solid blue; width: 84.444450378418px;">
+                خروجی</td>
+        </tr>
+    </table>
+    </body>
+</html>
